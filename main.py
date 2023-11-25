@@ -11,8 +11,8 @@ from collections import Counter
 
 MY_GUILD = discord.Object(id=1176471349896683550)
 
-SPOTIPY_CLIENT_ID = '466e21a0e01e4d458dfbfe65fc42f8c3'
-SPOTIPY_CLIENT_SECRET = '9dfb89e9b1dd4dbc89c347979199f501'
+SPOTIPY_CLIENT_ID = 'ID_HERE'
+SPOTIPY_CLIENT_SECRET = 'TOKEN_HERE'
 
 # Set up Spotify API
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=SPOTIPY_CLIENT_ID, client_secret=SPOTIPY_CLIENT_SECRET))
@@ -111,4 +111,4 @@ async def recommend(interaction: discord.Interaction, song_id: str):
 
 
 
-client.run("MTE3NjQ3MTU0ODM3OTU0OTc5Ng.GbOViI.vUVlXQrJ48J4ckjrqPx4_aEAMFZNjB5anOVaTk")
+client.run(TOKEN)
